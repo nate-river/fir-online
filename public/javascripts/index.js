@@ -60,11 +60,11 @@ window.onload = function(){
     if(data.color == 'bai'){
       color='hei'; el.setAttribute('class','block white');
       dict1[data.id] = true;
-      if(isHasWinner(data.id,dict1)){alert('白棋赢');}
+      if(isHasWinner(data.id,dict1)){alert('白棋赢'); location.reload()}
     }else{
       el.setAttribute('class','block black');
       dict2[data.id] = true;
-      if(isHasWinner(data.id,dict2)){alert('黑棋赢');}
+      if(isHasWinner(data.id,dict2)){alert('黑棋赢');location.reload()}
     }
     el.setAttribute('has-one','true');
   });
@@ -80,13 +80,13 @@ window.onload = function(){
     if( color == 'bai' ){
       el.setAttribute('class','block white');
       dict1[id] = true;
-      if(isHasWinner(id,dict1)){alert('白棋赢');}
+      if(isHasWinner(id,dict1)){alert('白棋赢');location.reload()}
       socket.emit('drop one', {id:id,color:'bai'});
     }
     if(color == 'hei'){
       el.setAttribute('class','block black');
       dict2[id] = true;
-      if(isHasWinner(id,dict2)){alert('黑棋赢');}
+      if(isHasWinner(id,dict2)){alert('黑棋赢');location.reload()}
       socket.emit('drop one', {id:id,color:'hei'});
     }
     el.setAttribute('has-one','true');
