@@ -1,9 +1,8 @@
 window.onload = function(){
   var socket = io(),
       sence = document.getElementById('sence'),
-
       //棋盘大小
-      ROW = 20,NUM = ROW*ROW,
+      ROW = 10,NUM = ROW*ROW,
 
       //场景宽度
       senceWidth = sence.offsetWidth,

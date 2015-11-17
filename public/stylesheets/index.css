@@ -1,4 +1,8 @@
-body{font-family:"微软雅黑"; color:#666;}
+body{
+    background:#4b4843;
+    font-family:"微软雅黑";
+    color:#666;
+}
 .sense{
     width:600px;
     height:600px;
@@ -8,6 +12,7 @@ body{font-family:"微软雅黑"; color:#666;}
     position:relative;
     box-shadow:-10px 10px 15px black;
     background:#8d6d45;
+    border:2px solid black;
 }
 .sense .block{
     float:left;
@@ -22,21 +27,20 @@ body{font-family:"微软雅黑"; color:#666;}
     position:absolute;
 }
 .sense .row{
-    width:600px;
+    width:100%;
     height:1px;
+    left:0;
 }
 .sense .col{
     width:1px;
-    height:600px;
+    height:100%;
+    top:0;
 }
 .white{
     background: #ffffff;
-    /* border:1px solid #2c1d1b; */
-    /* box-shadow: 0 3px 10px black; */
 }
 .black{
     background: #2c1d1b;
-    /* box-shadow: 0 3px 10px black; */
 }
 
 /*--------------------------------------------------*/
