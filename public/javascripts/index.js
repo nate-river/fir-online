@@ -9,7 +9,7 @@ window.onload = function(){
       senceWidth = sence.offsetWidth,
 
       //每颗棋子宽度
-      blockWidth =(senceWidth-ROW)/ROW +'px',
+      blockWidth =Math.floor( (senceWidth-ROW)/ROW ) +'px',
 
       //用户开始默认可以落子
       canDrop = true,
@@ -95,6 +95,7 @@ window.onload = function(){
 
   //处理对手发送过来的信息
   socket.on('drop one',function(data){
+    console.log(data);
     canDrop = true;
     var el = document.getElementById(data.id);
     el.setAttribute('has-one','true');
