@@ -43,5 +43,5 @@ Temporary Items
 .apdisk
 *.tern-port
 .idea
-.node_modules
+node_modules
 
