@@ -1,51 +1,50 @@
-body{
-    background:#4b4843;
-    font-family:"微软雅黑";
-    color:#666;
-}
-.sense{
-    width:600px;
-    height:600px;
-    margin:50px auto;
-    border-right:none;
-    border-bottom:none;
-    position:relative;
-    box-shadow:-10px 10px 15px black;
-    background:#8d6d45;
-    border:2px solid black;
-}
-.sense .block{
-    float:left;
-    margin-right:1px;
-    margin-bottom:1px;
-    border-radius:50%;
-    position:relative;
-    z-index:8884;
-}
-.sense .row,.sense .col{
-    background:#4d392b;
-    position:absolute;
-}
-.sense .row{
-    width:100%;
-    height:1px;
-    left:0;
-}
-.sense .col{
-    width:1px;
-    height:100%;
-    top:0;
-}
-.white{
-    background: #ffffff;
-}
-.black{
-    background: #2c1d1b;
+body {
+  background: #4b4843;
+  font-family: "微软雅黑", sans-serif;
+  color: #666;
 }
 
-/*--------------------------------------------------*/
-/* .login-box{width:600px; margin:60px auto; padding:100px; border:1px solid black; box-shadow:2px 4px 6px black; text-align:center;} */
-/* .login-box h1{font-size:60px; margin-bottom:50px; color:#666;} */
-/* .login-box input{display:block; margin:20px auto; padding:20px 30px; outline:none; font-size:30px; color:#ccc;} */
-/* .login-box .button{display:inline-block; padding:20px 40px; font-size:20px; border:1px solid black; -webkit-transition:all .4s ease; cursor:pointer;} */
-/* .login-box .button:hover{background:#555; color:white;} */
+.sense {
+  width: 600px;
+  height: 600px;
+  margin: 50px auto;
+  position: relative;
+  box-shadow: -10px 10px 15px black;
+  background: #8d6d45;
+  border: 2px solid black;
+}
+
+.sense .block {
+  float: left;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 8884;
+}
+
+.sense .row, .sense .col {
+  background: #4d392b;
+  position: absolute;
+}
+
+.sense .row {
+  width: 100%;
+  height: 1px;
+  left: 0;
+}
+
+.sense .col {
+  width: 1px;
+  height: 100%;
+  top: 0;
+}
+
+.white {
+  background: #ffffff;
+}
+
+.black {
+  background: #2c1d1b;
+}
+
